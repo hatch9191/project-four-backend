@@ -35,11 +35,25 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class BasicProfileSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'profile_image')
+
+
+class PopulatedUserSerializer(UserRegisterSerializer):
+    followed_by = BasicProfileSerializer(many=True)
+    following = BasicProfileSerializer(many=True)
+
+
 class UserProfileSerializer(serializers.ModelSerializer):
     saved_posts = UserPostDetailSerializer(many=True)
     created_posts = UserPostDetailSerializer(many=True)
+    followed_by = BasicProfileSerializer(many=True)
+    following = BasicProfileSerializer(many=True)
 
     class Meta:
         model = User
         fields = ('id', 'username', 'profile_image',
-                  'last_login', 'saved_posts', 'created_posts')
+                  'last_login', 'saved_posts', 'created_posts', 'followed_by', 'following')

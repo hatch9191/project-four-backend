@@ -61,3 +61,35 @@ class ProfileView(APIView):
             raise NotFound()
         serialized_user = UserProfileSerializer(user_to_show)
         return Response(serialized_user.data, status=status.HTTP_200_OK)
+
+class UserFollowView(APIView):
+
+    permission_classes = (IsAuthenticated, )
+
+    def post(self, request, pk):
+        try:
+            user_to_follow = User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            raise NotFound()
+
+        if request.user in user_to_follow.followed_by.all():
+            user_to_follow.followed_by.remove(request.user.id)
+        else:
+            user_to_follow.followed_by.add(request.user.id)
+
+        # user_to_follow.save()
+
+        serialized_followed_user = UserProfileSerializer(user_to_follow)
+
+        return Response(serialized_followed_user.data, status=status.HTTP_202_ACCEPTED)
+
+    # # unfollow
+    # def delete(self, request, pk):
+    #     try:
+    #         user_to_unfollow = User.objects.get(pk=pk)
+    #     except User.DoesNotExist:
+    #         raise NotFound()
+    #     user_to_unfollow.followed_by.remove(request.user.id)
+    #     user_to_unfollow.save()
+    #     serialized_followed_user = UserProfileSerializer(user_to_unfollow)
+    #     return Response(serialized_followed_user.data, status=status.HTTP_201_CREATED)
