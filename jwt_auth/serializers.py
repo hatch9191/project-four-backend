@@ -1,4 +1,5 @@
 # from posts.serializers import PostSerializer
+from posts.serializers import PostSerializer, UserPostDetailSerializer
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 # import django.contrib.auth.password_validation as validation
@@ -6,6 +7,7 @@ from django.contrib.auth.hashers import make_password
 from django.core.exceptions import ValidationError
 
 User = get_user_model()
+
 
 class UserRegisterSerializer(serializers.ModelSerializer):
 
@@ -32,8 +34,12 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         model = User
         fields = '__all__'
 
+
 class UserProfileSerializer(serializers.ModelSerializer):
+    saved_posts = UserPostDetailSerializer(many=True)
+    created_posts = UserPostDetailSerializer(many=True)
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'profile_image', 'last_login')
+        fields = ('id', 'username', 'profile_image',
+                  'last_login', 'saved_posts', 'created_posts')
