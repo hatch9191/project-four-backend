@@ -1,0 +1,32 @@
+[
+{
+  "model": "posts.post",
+  "pk": 1,
+  "fields": {
+    "title": "Mona Lisa",
+    "description": "An ok drawing",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631191143/project-4/Mona-Lisa-oil-wood-panel-Leonardo-da_esm7ki.jpg",
+    "created_at": "2021-09-09T12:39:53.997Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 2,
+  "fields": {
+    "title": "Van Gough",
+    "description": "Another good picture.",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631191230/project-4/Self-Portrait-canvas-Vincent-van-Gogh-National-Gallery-1889_kk0k7n.jpg",
+    "created_at": "2021-09-09T12:40:47.691Z"
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 3,
+  "fields": {
+    "title": "Girl With Balloon",
+    "description": "This is so subversive.",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631191324/project-4/Girl-with-Balloon-Banksy-Waterloo-Bridge-London_xynbqz.jpg",
+    "created_at": "2021-09-09T12:43:00.462Z"
+  }
+}
+]
