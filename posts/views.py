@@ -7,7 +7,7 @@ from rest_framework.generics import RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 from .models import Post, Comment
-from .serializers import CommentSerializer, PostSerializer, PostDetailSerializer
+from .serializers import CommentSerializer, PostSerializer, PostDetailSerializer, BasicPostSerializer
 
 
 class PostListView(APIView):
@@ -21,7 +21,9 @@ class PostListView(APIView):
 
     def post(self, request):
 
-        post_to_create = PostSerializer(data=request.data)
+        request.data['owner'] = request.user.id
+
+        post_to_create = BasicPostSerializer(data=request.data)
         if post_to_create.is_valid():
             post_to_create.save()
             return Response(post_to_create.data, status=status.HTTP_200_OK)
