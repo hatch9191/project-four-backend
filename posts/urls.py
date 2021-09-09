@@ -7,5 +7,5 @@ from .views import (
 
 urlpatterns = [
     path('', PostListView.as_view()),
-    path('<int:posts_pk>/', PostDetailView.as_view())
+    path('<int:pk>/', PostDetailView.as_view())
 ]
