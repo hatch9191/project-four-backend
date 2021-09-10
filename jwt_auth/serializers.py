@@ -15,8 +15,8 @@ class UserRegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
     password_confirmation = serializers.CharField(write_only=True)
 
-    chats_a = BasicChatSerializer(many=True)
-    chats_b = BasicChatSerializer(many=True)
+    # chats_a = BasicChatSerializer(many=True)
+    # chats_b = BasicChatSerializer(many=True)
 
     def validate(self, data):
         password = data.pop('password')
@@ -46,6 +46,14 @@ class BasicProfileSerializer(serializers.ModelSerializer):
         fields = ('id', 'username', 'profile_image')
 
 
+class UserUpdateSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'profile_image',
+                  'first_name', 'last_name')
+
+
 class PopulatedUserSerializer(UserRegisterSerializer):
     followed_by = BasicProfileSerializer(many=True)
     following = BasicProfileSerializer(many=True)
@@ -56,11 +64,11 @@ class UserProfileSerializer(serializers.ModelSerializer):
     created_posts = UserPostDetailSerializer(many=True)
     followed_by = BasicProfileSerializer(many=True)
     following = BasicProfileSerializer(many=True)
-    chats_a = BasicChatSerializer(many=True)
-    chats_b = BasicChatSerializer(many=True)
+    # chats_a = BasicChatSerializer(many=True)
+    # chats_b = BasicChatSerializer(many=True)
 
     class Meta:
         model = User
         fields = ('id', 'username', 'profile_image',
                   'last_login', 'saved_posts', 'created_posts',
-                  'followed_by', 'following', 'chats_a', 'chats_b')
+                  'followed_by', 'following', 'first_name', 'last_name')

@@ -26,8 +26,8 @@ class PostListView(APIView):
         post_to_create = BasicPostSerializer(data=request.data)
         if post_to_create.is_valid():
             post_to_create.save()
-            return Response(post_to_create.data, status=status.HTTP_200_OK)
-        return Response(post_to_create.data, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+            return Response(post_to_create.data, status=status.HTTP_201_CREATED)
+        return Response(post_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 
 class PostDetailView(RetrieveUpdateDestroyAPIView):

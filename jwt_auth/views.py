@@ -2,15 +2,17 @@ from datetime import datetime, timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied, NotFound
+from rest_framework.generics import UpdateAPIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
-from .serializers import UserRegisterSerializer, UserProfileSerializer
+from .serializers import UserRegisterSerializer, UserProfileSerializer, UserUpdateSerializer, BasicProfileSerializer
 
 User = get_user_model()
+
 
 class RegisterView(APIView):
 
@@ -23,6 +25,7 @@ class RegisterView(APIView):
                 status=status.HTTP_201_CREATED
             )
         return Response(user_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
 
 class LoginView(APIView):
 
@@ -40,7 +43,7 @@ class LoginView(APIView):
 
         expiry_time = datetime.now() + timedelta(days=7)
         token = jwt.encode(
-            { 'sub': user_to_login.id, 'exp': int(expiry_time.strftime('%s'))},
+            {'sub': user_to_login.id, 'exp': int(expiry_time.strftime('%s'))},
             settings.SECRET_KEY,
             algorithm='HS256'
         )
@@ -49,6 +52,24 @@ class LoginView(APIView):
             'token': token,
             'message': f'Welcome back, {username}!'
         }, status=status.HTTP_200_OK)
+
+
+class UserListView(APIView):
+
+    permission_classes = (IsAuthenticated, )
+
+    def get(self, _request):
+        users = User.objects.all()
+        serialized_user = BasicProfileSerializer(users, many=True)
+        return Response(serialized_user.data, status=status.HTTP_200_OK)
+
+
+class ProfileUpdateView(UpdateAPIView):
+
+    queryset = User.objects.all()
+    serializer_class = UserUpdateSerializer
+    permission_classes = (IsAuthenticated, )
+
 
 class ProfileView(APIView):
 
@@ -61,6 +82,7 @@ class ProfileView(APIView):
             raise NotFound()
         serialized_user = UserProfileSerializer(user_to_show)
         return Response(serialized_user.data, status=status.HTTP_200_OK)
+
 
 class UserFollowView(APIView):
 

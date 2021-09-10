@@ -1,3 +1,4 @@
+from django.core.checks import messages
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from .models import Chat, Message
@@ -19,6 +20,8 @@ class NestedMessageUserSerializer(serializers.ModelSerializer):
 
 
 class MessageSerializer(serializers.ModelSerializer):
+    # sender = NestedMessageUserSerializer()
+    # recipient = NestedMessageUserSerializer()
 
     class Meta:
         model = Message
@@ -31,6 +34,16 @@ class PopulateMessageSerializer(MessageSerializer):
 
 
 class BasicChatSerializer(serializers.ModelSerializer):
+    messages = PopulateMessageSerializer(many=True)
+    user_a = NestedMessageUserSerializer()
+    user_b = NestedMessageUserSerializer()
+
+    class Meta:
+        model = Chat
+        fields = ('id', 'user_a', 'user_b', 'messages')
+
+
+class CreateChatSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Chat

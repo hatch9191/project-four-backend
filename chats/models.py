@@ -25,7 +25,8 @@ class Message(models.Model):
     chat = models.ForeignKey(
         Chat,
         related_name='messages',
-        on_delete=CASCADE
+        on_delete=CASCADE,
+        blank=True
     )
     sender = models.ForeignKey(
         'jwt_auth.User',
