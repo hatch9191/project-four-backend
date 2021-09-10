@@ -9,10 +9,14 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
-from .serializers import UserRegisterSerializer, UserProfileSerializer, UserUpdateSerializer, BasicProfileSerializer
+from .serializers import (
+    UserRegisterSerializer,
+    UserProfileSerializer,
+    UserUpdateSerializer,
+    BasicProfileSerializer
+)
 
 User = get_user_model()
-
 
 class RegisterView(APIView):
 
@@ -32,22 +36,20 @@ class LoginView(APIView):
     def post(self, request):
         username = request.data.get('username')
         password = request.data.get('password')
-
         try:
             user_to_login = User.objects.get(username=username)
         except User.DoesNotExist:
             raise PermissionDenied(detail='Unauthorized')
-
         if not user_to_login.check_password(password):
             raise PermissionDenied(detail='Unauthorized')
-
         expiry_time = datetime.now() + timedelta(days=7)
         token = jwt.encode(
-            {'sub': user_to_login.id, 'exp': int(expiry_time.strftime('%s'))},
+            {'sub': user_to_login.id, 
+            'exp': int(expiry_time.strftime('%s'))
+            },
             settings.SECRET_KEY,
             algorithm='HS256'
         )
-
         return Response({
             'token': token,
             'message': f'Welcome back, {username}!'
@@ -55,7 +57,6 @@ class LoginView(APIView):
 
 
 class UserListView(APIView):
-
     permission_classes = (IsAuthenticated, )
 
     def get(self, _request):
@@ -72,7 +73,6 @@ class ProfileUpdateView(UpdateAPIView):
 
 
 class ProfileView(APIView):
-
     permission_classes = (IsAuthenticated, )
 
     def get(self, _request, user_pk):
@@ -85,7 +85,6 @@ class ProfileView(APIView):
 
 
 class UserFollowView(APIView):
-
     permission_classes = (IsAuthenticated, )
 
     def post(self, request, pk):
@@ -93,25 +92,10 @@ class UserFollowView(APIView):
             user_to_follow = User.objects.get(pk=pk)
         except User.DoesNotExist:
             raise NotFound()
-
         if request.user in user_to_follow.followed_by.all():
             user_to_follow.followed_by.remove(request.user.id)
         else:
             user_to_follow.followed_by.add(request.user.id)
-
-        # user_to_follow.save()
-
         serialized_followed_user = UserProfileSerializer(user_to_follow)
-
         return Response(serialized_followed_user.data, status=status.HTTP_202_ACCEPTED)
 
-    # # unfollow
-    # def delete(self, request, pk):
-    #     try:
-    #         user_to_unfollow = User.objects.get(pk=pk)
-    #     except User.DoesNotExist:
-    #         raise NotFound()
-    #     user_to_unfollow.followed_by.remove(request.user.id)
-    #     user_to_unfollow.save()
-    #     serialized_followed_user = UserProfileSerializer(user_to_unfollow)
-    #     return Response(serialized_followed_user.data, status=status.HTTP_201_CREATED)

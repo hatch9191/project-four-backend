@@ -1,11 +1,8 @@
-from django.db import models
-from django.db.models import fields
-from rest_framework import serializers
 from django.contrib.auth import get_user_model
+from rest_framework import serializers
 from .models import Post, Comment
 
 User = get_user_model()
-
 
 class BasicPostSerializer(serializers.ModelSerializer):
 

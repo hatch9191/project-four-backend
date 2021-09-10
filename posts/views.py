@@ -1,5 +1,4 @@
 from rest_framework import status
-from rest_framework import permissions
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -7,11 +6,16 @@ from rest_framework.generics import RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 from .models import Post, Comment
-from .serializers import CommentSerializer, PostSerializer, PostDetailSerializer, BasicPostSerializer
+from .serializers import (
+    CommentSerializer,
+    PostSerializer,
+    PostDetailSerializer,
+    BasicPostSerializer
+)
 
 
 class PostListView(APIView):
-
+    # show all posts and create a post
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
@@ -20,9 +24,7 @@ class PostListView(APIView):
         return Response(serialized_post.data, status=status.HTTP_200_OK)
 
     def post(self, request):
-
         request.data['owner'] = request.user.id
-
         post_to_create = BasicPostSerializer(data=request.data)
         if post_to_create.is_valid():
             post_to_create.save()
@@ -31,7 +33,7 @@ class PostListView(APIView):
 
 
 class PostDetailView(RetrieveUpdateDestroyAPIView):
-    '''Detail view for /posts/id SHOW/ UPDATE/ DELETE'''
+    # show/delete/edit a post
 
     queryset = Post.objects.all()
     serializer_class = PostDetailSerializer
@@ -39,13 +41,12 @@ class PostDetailView(RetrieveUpdateDestroyAPIView):
 
 
 class CommentListView(APIView):
-
+    # create a comment on a post
     permission_classes = (IsAuthenticated, )
 
     def post(self, request, post_pk):
         request.data['post'] = post_pk
         request.data['owner'] = request.user.id
-
         created_comment = CommentSerializer(data=request.data)
         if created_comment.is_valid():
             created_comment.save()
@@ -54,8 +55,7 @@ class CommentListView(APIView):
 
 
 class CommentDetailView(APIView):
-    ''' DELETE COMMENT VIEW '''
-
+    # delete a comment on a post
     permission_classes = (IsAuthenticated, )
 
     def delete(self, _request, **kwargs):
@@ -69,7 +69,7 @@ class CommentDetailView(APIView):
 
 
 class PostSaveView(APIView):
-
+    # user saves a post 
     permission_classes = (IsAuthenticated, )
 
     def post(self, request, post_pk):
@@ -77,12 +77,9 @@ class PostSaveView(APIView):
             post_to_save = Post.objects.get(pk=post_pk)
         except Post.DoesNotExist:
             raise NotFound()
-
         if request.user in post_to_save.saved_by.all():
             post_to_save.saved_by.remove(request.user.id)
         else:
             post_to_save.saved_by.add(request.user.id)
-
         serialized_post = PostSerializer(post_to_save)
-
         return Response(serialized_post.data, status=status.HTTP_202_ACCEPTED)

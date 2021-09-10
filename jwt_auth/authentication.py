@@ -10,12 +10,10 @@ class JWTAuthentication(BasicAuthentication):
 
     def authenticate(self, request):
         header = request.headers.get('Authorization')
-
         if not header:
             return None
         if not header.startswith('Bearer'):
             raise PermissionDenied({'detail': 'Invalid Auth Header'})
-
         token = header.replace('Bearer ', '')
 
         try:
@@ -25,5 +23,4 @@ class JWTAuthentication(BasicAuthentication):
             raise PermissionDenied({'detail': 'Invalid Token'})
         except User.DoesNotExist:
             raise PermissionDenied({'detail': 'User Not Found'})
-
         return (user, token)
