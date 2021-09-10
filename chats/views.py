@@ -106,7 +106,7 @@ class MessageListView(APIView):
         request.data['sender'] = request.user.id
         request.data['recipient'] = kwargs['profile_pk']
 
-        created_message = PopulateMessageSerializer(data=request.data)
+        created_message = MessageSerializer(data=request.data)
         if created_message.is_valid():
             created_message.save()
             return Response(created_message.data, status=status.HTTP_201_CREATED)
