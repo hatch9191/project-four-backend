@@ -7,6 +7,7 @@ from posts.serializers import UserPostDetailSerializer
 
 User = get_user_model()
 
+
 class UserRegisterSerializer(serializers.ModelSerializer):
 
     password = serializers.CharField(write_only=True)
@@ -41,12 +42,11 @@ class UserUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = (
-            'id',
             'username',
-            'email',
-            'profile_image',
             'first_name',
-            'last_name'
+            'last_name',
+            'email',
+            'profile_image'
         )
 
 
@@ -73,5 +73,6 @@ class UserProfileSerializer(serializers.ModelSerializer):
             'followed_by',
             'following',
             'first_name',
-            'last_name'
+            'last_name',
+            'email'
         )
