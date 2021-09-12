@@ -36,8 +36,8 @@ class ChatListView(APIView):
             (Q(user_a=sender) & Q(user_b=recipient)) |
             (Q(user_b=sender) & Q(user_a=recipient)))
         serialized_chat = CreateChatSerializer(chats, many=True)
-        if len(chats) < 1:
-            raise NotFound(detail='Chat not found')
+        # if len(chats) < 1:
+        #     raise NotFound(detail='Chat not found')
         return Response(serialized_chat.data, status=status.HTTP_200_OK)
 
 
