@@ -5,12 +5,14 @@ from .views import (
     ProfileView,
     UserFollowView,
     ProfileUpdateView,
+    ProfileEditView,
     UserListView
 )
 
 urlpatterns = [
     path('register/', RegisterView.as_view()),
     path('login/', LoginView.as_view()),
+    path('profile/<int:pk>/edit/', ProfileEditView.as_view()),
     path('profile/<int:pk>/update/', ProfileUpdateView.as_view()),
     path('profile/<int:pk>/follow/', UserFollowView.as_view()),
     path('profile/<int:user_pk>/', ProfileView.as_view()),

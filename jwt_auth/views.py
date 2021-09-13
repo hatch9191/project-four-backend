@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from inspect import currentframe
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied, NotFound
@@ -17,6 +18,7 @@ from .serializers import (
 )
 
 User = get_user_model()
+
 
 class RegisterView(APIView):
 
@@ -44,9 +46,9 @@ class LoginView(APIView):
             raise PermissionDenied(detail='Unauthorized')
         expiry_time = datetime.now() + timedelta(days=7)
         token = jwt.encode(
-            {'sub': user_to_login.id, 
-            'exp': int(expiry_time.strftime('%s'))
-            },
+            {'sub': user_to_login.id,
+             'exp': int(expiry_time.strftime('%s'))
+             },
             settings.SECRET_KEY,
             algorithm='HS256'
         )
@@ -70,6 +72,21 @@ class ProfileUpdateView(UpdateAPIView):
     queryset = User.objects.all()
     serializer_class = UserUpdateSerializer
     permission_classes = (IsAuthenticated, )
+
+
+class ProfileEditView(APIView):
+
+    permission_classes = (IsAuthenticated, )
+
+    def put(self, request, **kwargs):
+        id = kwargs['pk']
+        current_user = User.objects.get(id=request.user.id)
+        edited_current_user = UserUpdateSerializer(
+            current_user, data=request.data)
+        if edited_current_user.is_valid():
+            edited_current_user.save()
+            return Response(edited_current_user.data, status=status.HTTP_202_ACCEPTED)
+        return Response(edited_current_user.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 
 class ProfileView(APIView):
@@ -98,4 +115,3 @@ class UserFollowView(APIView):
             user_to_follow.followed_by.add(request.user.id)
         serialized_followed_user = UserProfileSerializer(user_to_follow)
         return Response(serialized_followed_user.data, status=status.HTTP_202_ACCEPTED)
-
