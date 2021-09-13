@@ -30,11 +30,32 @@ class UserRegisterSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class BasicProfileSerializer(serializers.ModelSerializer):
+class FollowersFollowingProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('id', 'username', 'profile_image')
+        fields = (
+            'id',
+            'username',
+            'profile_image',
+            'followed_by',
+            'following',
+        )
+
+
+class BasicProfileSerializer(serializers.ModelSerializer):
+    followed_by = FollowersFollowingProfileSerializer(many=True)
+    following = FollowersFollowingProfileSerializer(many=True)
+
+    class Meta:
+        model = User
+        fields = (
+            'id',
+            'username',
+            'profile_image',
+            'followed_by',
+            'following',
+        )
 
 
 class UserUpdateSerializer(serializers.ModelSerializer):
