@@ -2,9 +2,8 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.generics import RetrieveUpdateDestroyAPIView
+from rest_framework.generics import ListAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
-
 from .models import Post, Comment
 from .serializers import (
     CommentSerializer,
@@ -30,6 +29,16 @@ class PostListView(APIView):
             post_to_create.save()
             return Response(post_to_create.data, status=status.HTTP_201_CREATED)
         return Response(post_to_create.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+
+class PostFilterView(ListAPIView):
+    # show filtered posts
+
+    def get(self, request):
+        print(request.GET['q'])
+        filteredPosts = Post.objects.filter(title__icontains = request.GET['q'])
+        serialized_post = PostSerializer(filteredPosts, many=True)
+        return Response(serialized_post.data, status=status.HTTP_200_OK)
 
 
 class PostDetailView(RetrieveUpdateDestroyAPIView):

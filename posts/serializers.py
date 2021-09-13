@@ -32,7 +32,7 @@ class PostDetailSerializer(serializers.ModelSerializer):
     comments = PopulatedCommentSerializer(many=True, read_only=True)
     saved_by = NestedUserSerializer(many=True, read_only=True)
     owner = NestedUserSerializer(read_only=True)
-
+    
     class Meta:
         model = Post
         fields = '__all__'
@@ -42,6 +42,8 @@ class PostSerializer(serializers.ModelSerializer):
     comments = PopulatedCommentSerializer(many=True, read_only=True)
     saved_by = NestedUserSerializer(many=True, read_only=True)
     owner = NestedUserSerializer(read_only=True)
+    value = serializers.CharField(source='title')
+    label = serializers.CharField(source='title')
 
     class Meta:
         model = Post
