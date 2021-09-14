@@ -1,0 +1,1110 @@
+[
+{
+  "model": "chats.chat",
+  "pk": 1,
+  "fields": {
+    "user_a": 2,
+    "user_b": 1
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 2,
+  "fields": {
+    "user_a": 2,
+    "user_b": 3
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 3,
+  "fields": {
+    "user_a": 1,
+    "user_b": 3
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 4,
+  "fields": {
+    "user_a": 4,
+    "user_b": 2
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 5,
+  "fields": {
+    "user_a": 5,
+    "user_b": 2
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 6,
+  "fields": {
+    "user_a": 2,
+    "user_b": 6
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 7,
+  "fields": {
+    "user_a": 2,
+    "user_b": 7
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 8,
+  "fields": {
+    "user_a": 2,
+    "user_b": 8
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 9,
+  "fields": {
+    "user_a": 2,
+    "user_b": 9
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 10,
+  "fields": {
+    "user_a": 2,
+    "user_b": 10
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 11,
+  "fields": {
+    "user_a": 2,
+    "user_b": 11
+  }
+},
+{
+  "model": "chats.chat",
+  "pk": 12,
+  "fields": {
+    "user_a": 2,
+    "user_b": 12
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 2,
+  "fields": {
+    "content": "This message was sent from the API",
+    "created_at": "2021-09-09T22:13:19.239Z",
+    "chat": 1,
+    "sender": 2,
+    "recipient": 1
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 3,
+  "fields": {
+    "content": "Snet by Eoin to Testing",
+    "created_at": "2021-09-09T22:45:12.329Z",
+    "chat": 2,
+    "sender": 2,
+    "recipient": 3
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 4,
+  "fields": {
+    "content": "Snet by admin to Testing",
+    "created_at": "2021-09-09T22:46:16.458Z",
+    "chat": 3,
+    "sender": 1,
+    "recipient": 3
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 5,
+  "fields": {
+    "content": "Second message",
+    "created_at": "2021-09-10T08:31:36.694Z",
+    "chat": 2,
+    "sender": 1,
+    "recipient": 3
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 6,
+  "fields": {
+    "content": "Third message",
+    "created_at": "2021-09-10T08:31:41.257Z",
+    "chat": 2,
+    "sender": 1,
+    "recipient": 3
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 7,
+  "fields": {
+    "content": "USER to Eoin one",
+    "created_at": "2021-09-10T09:13:35.802Z",
+    "chat": 4,
+    "sender": 4,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 8,
+  "fields": {
+    "content": "Eoin to User one",
+    "created_at": "2021-09-10T09:14:30.672Z",
+    "chat": 4,
+    "sender": 2,
+    "recipient": 4
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 10,
+  "fields": {
+    "content": "Harry to Eoin one",
+    "created_at": "2021-09-10T10:47:18.648Z",
+    "chat": 5,
+    "sender": 5,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 11,
+  "fields": {
+    "content": "Eoin to Harry two",
+    "created_at": "2021-09-10T10:48:59.168Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 12,
+  "fields": {
+    "content": "Eoin to Harry three",
+    "created_at": "2021-09-10T11:19:59.674Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 13,
+  "fields": {
+    "content": "Eoin to Harry three",
+    "created_at": "2021-09-10T12:26:26.814Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 14,
+  "fields": {
+    "content": "Eoin to Harry three",
+    "created_at": "2021-09-10T12:29:40.939Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 15,
+  "fields": {
+    "content": "Eoin to Harry three",
+    "created_at": "2021-09-10T13:15:34.772Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 16,
+  "fields": {
+    "content": "sds",
+    "created_at": "2021-09-11T15:34:56.478Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 17,
+  "fields": {
+    "content": "sdfv",
+    "created_at": "2021-09-11T15:35:17.674Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 18,
+  "fields": {
+    "content": "sdfvevr",
+    "created_at": "2021-09-11T15:35:52.151Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 19,
+  "fields": {
+    "content": "fkvwj",
+    "created_at": "2021-09-11T15:36:44.454Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 20,
+  "fields": {
+    "content": "wrbet",
+    "created_at": "2021-09-11T15:45:51.316Z",
+    "chat": 1,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 21,
+  "fields": {
+    "content": "vrge",
+    "created_at": "2021-09-11T15:45:58.063Z",
+    "chat": 1,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 22,
+  "fields": {
+    "content": "wece",
+    "created_at": "2021-09-11T15:46:32.861Z",
+    "chat": 1,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 23,
+  "fields": {
+    "content": "sdfbaer",
+    "created_at": "2021-09-11T15:48:40.944Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 24,
+  "fields": {
+    "content": "rfe",
+    "created_at": "2021-09-11T15:58:00.641Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 25,
+  "fields": {
+    "content": "dvwdvsf",
+    "created_at": "2021-09-11T16:08:00.089Z",
+    "chat": 1,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 26,
+  "fields": {
+    "content": "serer",
+    "created_at": "2021-09-11T16:30:08.062Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 27,
+  "fields": {
+    "content": "evrvr",
+    "created_at": "2021-09-12T09:19:37.393Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 28,
+  "fields": {
+    "content": "dscsdc",
+    "created_at": "2021-09-12T09:54:11.842Z",
+    "chat": 6,
+    "sender": 2,
+    "recipient": 6
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 29,
+  "fields": {
+    "content": "ds sd",
+    "created_at": "2021-09-12T09:57:19.320Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 7
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 30,
+  "fields": {
+    "content": "sdfdsf",
+    "created_at": "2021-09-12T09:58:42.205Z",
+    "chat": 8,
+    "sender": 2,
+    "recipient": 8
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 31,
+  "fields": {
+    "content": "srbdfv",
+    "created_at": "2021-09-12T10:02:47.521Z",
+    "chat": 9,
+    "sender": 2,
+    "recipient": 9
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 32,
+  "fields": {
+    "content": "wrrwerw",
+    "created_at": "2021-09-12T10:19:24.116Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 33,
+  "fields": {
+    "content": "yttdry",
+    "created_at": "2021-09-12T10:50:14.202Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 34,
+  "fields": {
+    "content": "q",
+    "created_at": "2021-09-12T10:54:48.566Z",
+    "chat": 11,
+    "sender": 2,
+    "recipient": 11
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 35,
+  "fields": {
+    "content": "eefvvf",
+    "created_at": "2021-09-12T11:14:49.416Z",
+    "chat": 12,
+    "sender": 2,
+    "recipient": 12
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 36,
+  "fields": {
+    "content": "I am going to make this a very long message to see how it handle it and then we will be able to tell when I should cut off the message",
+    "created_at": "2021-09-12T19:05:42.994Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 37,
+  "fields": {
+    "content": "df",
+    "created_at": "2021-09-12T19:07:28.345Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 38,
+  "fields": {
+    "content": "fjhvbwebwouvawrvberivbawkbv;aiwrbvleirvl;iaervl;aer;ve;ivi;aerv;br;kv;iqt",
+    "created_at": "2021-09-12T19:09:10.636Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 39,
+  "fields": {
+    "content": "uf",
+    "created_at": "2021-09-12T19:57:32.633Z",
+    "chat": 2,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 40,
+  "fields": {
+    "content": "uf",
+    "created_at": "2021-09-12T19:57:32.617Z",
+    "chat": 2,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 41,
+  "fields": {
+    "content": "This is a very long message to see how the block handles it",
+    "created_at": "2021-09-12T20:13:36.908Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 42,
+  "fields": {
+    "content": "sdc",
+    "created_at": "2021-09-13T14:34:33.668Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 43,
+  "fields": {
+    "content": "svdsdv",
+    "created_at": "2021-09-13T14:55:23.703Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 44,
+  "fields": {
+    "content": "sddf",
+    "created_at": "2021-09-13T14:55:25.961Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 45,
+  "fields": {
+    "content": "sdfds",
+    "created_at": "2021-09-13T14:55:27.390Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 46,
+  "fields": {
+    "content": "sdfds",
+    "created_at": "2021-09-13T14:55:28.412Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 47,
+  "fields": {
+    "content": "sdfsd",
+    "created_at": "2021-09-13T14:55:29.520Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 48,
+  "fields": {
+    "content": "ese",
+    "created_at": "2021-09-13T14:55:47.366Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 49,
+  "fields": {
+    "content": "erger",
+    "created_at": "2021-09-13T15:12:47.985Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 50,
+  "fields": {
+    "content": "sdvoaebvaerbuovaoibvouabe;vbaervbouaeovoaerovr",
+    "created_at": "2021-09-13T15:16:41.206Z",
+    "chat": 4,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 51,
+  "fields": {
+    "content": "isbvoaeroveowravobaerouvoiaervorovaeorvboarebvoawbrvoubaerobvoaerbvoerbvoubaer",
+    "created_at": "2021-09-13T15:16:46.006Z",
+    "chat": 4,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 52,
+  "fields": {
+    "content": "sdfghfefwqefgsdgdwreqrfgsfdwerqegsfdgfgwerqrgsdrewrrqgaaewgrsdbgawergsggsrgasbdrgdfb",
+    "created_at": "2021-09-13T15:16:54.182Z",
+    "chat": 4,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 53,
+  "fields": {
+    "content": "awefewfeffefefasfa",
+    "created_at": "2021-09-13T15:58:06.136Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 54,
+  "fields": {
+    "content": "sdf",
+    "created_at": "2021-09-13T15:58:09.957Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 55,
+  "fields": {
+    "content": "Here is an actual sentence in english to test the breaking of words",
+    "created_at": "2021-09-13T17:40:01.220Z",
+    "chat": 4,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 56,
+  "fields": {
+    "content": "conversation is here asnd wosdiie waidcoawcow doweiweo",
+    "created_at": "2021-09-13T17:54:54.101Z",
+    "chat": 1,
+    "sender": 4,
+    "recipient": 4
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 57,
+  "fields": {
+    "content": "Eoin to harry 2",
+    "created_at": "2021-09-13T17:56:56.785Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 58,
+  "fields": {
+    "content": "Just sending a text here",
+    "created_at": "2021-09-13T18:03:22.908Z",
+    "chat": 5,
+    "sender": 5,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 59,
+  "fields": {
+    "content": "And another one",
+    "created_at": "2021-09-13T18:13:41.424Z",
+    "chat": 5,
+    "sender": 5,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 60,
+  "fields": {
+    "content": "sanvpiernvnirvpr",
+    "created_at": "2021-09-13T18:16:17.834Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 61,
+  "fields": {
+    "content": "lawrjvnpwrnvpaenrvprn",
+    "created_at": "2021-09-13T18:16:25.491Z",
+    "chat": 5,
+    "sender": 5,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 62,
+  "fields": {
+    "content": "kwrbvpiaervpr",
+    "created_at": "2021-09-13T18:16:33.919Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 63,
+  "fields": {
+    "content": "asdsdsd",
+    "created_at": "2021-09-13T19:19:31.670Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 64,
+  "fields": {
+    "content": "oasjdboiasdnv",
+    "created_at": "2021-09-13T19:21:06.077Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 7
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 65,
+  "fields": {
+    "content": "lasfnvrn",
+    "created_at": "2021-09-13T19:21:24.808Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 7
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 66,
+  "fields": {
+    "content": "worhfwpir",
+    "created_at": "2021-09-13T19:21:32.623Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 7
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 67,
+  "fields": {
+    "content": "hoya bill",
+    "created_at": "2021-09-13T19:25:33.105Z",
+    "chat": 6,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 68,
+  "fields": {
+    "content": "Great ot talk this is a long messge to show off the hours you put into typing 3 lines of CSS",
+    "created_at": "2021-09-13T19:26:13.263Z",
+    "chat": 6,
+    "sender": 6,
+    "recipient": 6
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 69,
+  "fields": {
+    "content": "Reply message",
+    "created_at": "2021-09-13T19:26:48.612Z",
+    "chat": 6,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 70,
+  "fields": {
+    "content": "longer reply messafge to see ow the messaging works with longer text",
+    "created_at": "2021-09-13T19:27:03.647Z",
+    "chat": 6,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 71,
+  "fields": {
+    "content": "sdvcawkdbclw",
+    "created_at": "2021-09-13T19:34:32.019Z",
+    "chat": 6,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 72,
+  "fields": {
+    "content": "aosubvowbvo",
+    "created_at": "2021-09-13T19:34:51.137Z",
+    "chat": 6,
+    "sender": 6,
+    "recipient": 6
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 73,
+  "fields": {
+    "content": "shdebckhs dvoksdbvoiwevo w vowe vbjsdvo",
+    "created_at": "2021-09-13T19:50:00.145Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 74,
+  "fields": {
+    "content": "faewef",
+    "created_at": "2021-09-13T19:50:17.131Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 75,
+  "fields": {
+    "content": "dfef",
+    "created_at": "2021-09-13T19:50:21.573Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 76,
+  "fields": {
+    "content": "ashbdsbdfsfasfsdf",
+    "created_at": "2021-09-13T19:55:07.315Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 77,
+  "fields": {
+    "content": "Stop texting me",
+    "created_at": "2021-09-13T19:55:34.952Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 78,
+  "fields": {
+    "content": "longer message to see if this can handle longer text well lets see now",
+    "created_at": "2021-09-13T19:55:52.120Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 79,
+  "fields": {
+    "content": "asdfaewef",
+    "created_at": "2021-09-13T19:56:22.337Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 80,
+  "fields": {
+    "content": "sdvsefe",
+    "created_at": "2021-09-13T19:56:46.539Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 81,
+  "fields": {
+    "content": "there will be tmsaodcowec aiudbvoasdbiawkvaeibcviabibo boo. ofo",
+    "created_at": "2021-09-13T19:59:44.595Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 82,
+  "fields": {
+    "content": "asvjwvwvoero",
+    "created_at": "2021-09-13T20:03:09.790Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 83,
+  "fields": {
+    "content": "ibavouwasdcousdf",
+    "created_at": "2021-09-13T20:55:31.159Z",
+    "chat": 7,
+    "sender": 2,
+    "recipient": 7
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 84,
+  "fields": {
+    "content": "asdfsdfsdf",
+    "created_at": "2021-09-13T20:56:20.274Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 85,
+  "fields": {
+    "content": "this is the edidvodn",
+    "created_at": "2021-09-13T20:57:15.325Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 86,
+  "fields": {
+    "content": "svibvusbvod bairb",
+    "created_at": "2021-09-13T21:08:19.665Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 87,
+  "fields": {
+    "content": "sadvdvds",
+    "created_at": "2021-09-14T08:25:50.724Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 88,
+  "fields": {
+    "content": "sdvsdvs",
+    "created_at": "2021-09-14T09:51:13.183Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 89,
+  "fields": {
+    "content": "ertyuytr34567",
+    "created_at": "2021-09-14T09:51:17.569Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 90,
+  "fields": {
+    "content": "This is a test to see if the messages can handle text wrapping lets see now",
+    "created_at": "2021-09-14T09:51:39.734Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 91,
+  "fields": {
+    "content": "Hya Bill ya keepong well are uoir mice pme tjere and a; teh",
+    "created_at": "2021-09-14T09:52:46.564Z",
+    "chat": 6,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 92,
+  "fields": {
+    "content": "iervoweru",
+    "created_at": "2021-09-14T11:21:56.768Z",
+    "chat": 12,
+    "sender": 2,
+    "recipient": 2
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 93,
+  "fields": {
+    "content": "df",
+    "created_at": "2021-09-14T12:27:37.804Z",
+    "chat": 5,
+    "sender": 2,
+    "recipient": 5
+  }
+},
+{
+  "model": "chats.message",
+  "pk": 94,
+  "fields": {
+    "content": "this si a longer message here with an emoji 😀",
+    "created_at": "2021-09-14T13:21:27.610Z",
+    "chat": 2,
+    "sender": 2,
+    "recipient": 2
+  }
+}
+]
