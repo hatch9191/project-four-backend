@@ -2,6 +2,7 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.generics import UpdateAPIView
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
@@ -9,7 +10,8 @@ from .models import Chat, Message
 from .serializers import (
     BasicChatSerializer,
     MessageSerializer,
-    CreateChatSerializer
+    CreateChatSerializer,
+    MessageEditSerializer
 )
 
 
@@ -102,3 +104,25 @@ class MessageDetailVeiw(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Message.DoesNotExist:
             raise NotFound(detail='Message not found')
+
+
+# class MessageEditView(UpdateAPIView):
+#     # edit a message
+
+#     queryset = Message.objects.all()
+#     serializer_class = MessageEditSerializer
+#     permission_classes = (IsAuthenticated, )
+
+class MessageEditView(APIView):
+    # edit a message
+    permission_classes = (IsAuthenticated, )
+
+    def put(self, request, **kwargs):
+        current_message = Message.objects.get(pk=kwargs['message_pk'])
+        edited_message = MessageEditSerializer(
+            current_message, data=request.data)
+        print(edited_message)
+        if edited_message.is_valid():
+            edited_message.save()
+            return Response(edited_message.data, status=status.HTTP_202_ACCEPTED)
+        return Response(edited_message.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)

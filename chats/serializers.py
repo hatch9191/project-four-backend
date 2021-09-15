@@ -4,6 +4,7 @@ from .models import Chat, Message
 
 User = get_user_model()
 
+
 class NestedMessageUserSerializer(serializers.ModelSerializer):
 
     class Meta:
@@ -38,3 +39,10 @@ class CreateChatSerializer(serializers.ModelSerializer):
     class Meta:
         model = Chat
         fields = ('id', 'user_a', 'user_b')
+
+
+class MessageEditSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Message
+        fields = ('is_read',)
