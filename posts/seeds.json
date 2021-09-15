@@ -6,10 +6,11 @@
     "title": "Mona Lisa",
     "description": "An ok drawing",
     "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631191143/project-4/Mona-Lisa-oil-wood-panel-Leonardo-da_esm7ki.jpg",
+    "movement": "Renaissance",
     "created_at": "2021-09-09T12:39:53.997Z",
-    "owner": 1,
+    "owner": 5,
     "saved_by": [
-      2
+      5
     ]
   }
 },
@@ -20,8 +21,9 @@
     "title": "Girl With Balloon",
     "description": "This is so subversive.",
     "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631191324/project-4/Girl-with-Balloon-Banksy-Waterloo-Bridge-London_xynbqz.jpg",
+    "movement": "Street",
     "created_at": "2021-09-09T12:43:00.462Z",
-    "owner": 1,
+    "owner": 5,
     "saved_by": []
   }
 },
@@ -29,9 +31,10 @@
   "model": "posts.post",
   "pk": 4,
   "fields": {
-    "title": "Van Donut",
-    "description": "Another good picture.",
+    "title": "Self-Portrait",
+    "description": "by Van Gogh",
     "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631191230/project-4/Self-Portrait-canvas-Vincent-van-Gogh-National-Gallery-1889_kk0k7n.jpg",
+    "movement": "Post-Impressionism",
     "created_at": "2021-09-09T14:57:01.048Z",
     "owner": 1,
     "saved_by": []
@@ -44,7 +47,8 @@
     "title": "Starry Night",
     "description": "by Vincent van Gogh",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367764/sei_project_3_studio_images/HlgucZ0ylJAfZgusynnUwxNIgIp5htNhShF559x3dRXiuy_UdP3UQVLYW6c_w454-h300-n-l64_a5ubua.jpg",
-    "created_at": "2021-09-11T12:25:43.000Z",
+    "movement": "Post-Impressionism",
+    "created_at": "2021-09-11T12:25:43Z",
     "owner": 2,
     "saved_by": []
   }
@@ -56,6 +60,7 @@
     "title": "Girl with a Pearl Earring",
     "description": "by Johannes Vermeer",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367743/sei_project_3_studio_images/J0sw0IiqP2F4gavYnI-vUa5IBgHiHy42lohgm-qq1vuygUX0HQgylVSV1ZdDTV5XIg_w255-h300-n-l64_rglybj.jpg",
+    "movement": "Dutch Golden Age",
     "created_at": "2021-09-11T12:27:37.612Z",
     "owner": 4,
     "saved_by": [
@@ -70,6 +75,7 @@
     "title": "A Sunday Afternoon on the Island of La Grande Jatte",
     "description": "by Georges Seurat",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367721/sei_project_3_studio_images/0YJsUuKnFXFonyuQvEy7H6RoT8i8Lzxm1GeOqYhuwrOqpVcR1W5PpBGJWA_w454-h300-n-l64_npgpy9.jpg",
+    "movement": "Neo-Impressionism",
     "created_at": "2021-09-11T13:21:51.580Z",
     "owner": 2,
     "saved_by": []
@@ -82,6 +88,7 @@
     "title": "The Kiss",
     "description": "by Gustav Klimt",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367469/sei_project_3_studio_images/UuYCUnqvo2EIZhyFHYFVLbkmma_cubVk7SwxOF3lklT6aor5647BXVhEaFB7jg_w298-h300-n-l64_nrbc76.jpg",
+    "movement": "Art Nouveau",
     "created_at": "2021-09-11T13:22:38.033Z",
     "owner": 3,
     "saved_by": []
@@ -94,6 +101,7 @@
     "title": "American Gothic",
     "description": "by Grant Wood",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367685/sei_project_3_studio_images/Vw6D1hSkdwPxGarkGGMviDZflLBx7wH6skpde-2KLautW5vZkCEz1TPYXnM_w247-h300-n-l64_aq8g1g.jpg",
+    "movement": "Modernism",
     "created_at": "2021-09-11T13:23:13.468Z",
     "owner": 3,
     "saved_by": []
@@ -106,6 +114,7 @@
     "title": "Café Terrace at Night",
     "description": "by Vincent van Gogh",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367666/sei_project_3_studio_images/VG415-1000x1000_vjcksw.jpg",
+    "movement": "Post-Impressionism",
     "created_at": "2021-09-11T13:23:44.747Z",
     "owner": 2,
     "saved_by": []
@@ -118,6 +127,7 @@
     "title": "Nighthawks",
     "description": "by Edward Hopper",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367639/sei_project_3_studio_images/UJUKrxA0gKZvms4WHJ1Ows9eE9agthTCAG309bKe5vCOzOzp5G8Phpw5YY83_w454-h250-n-l64_ymahrk.jpg",
+    "movement": "Modernism",
     "created_at": "2021-09-11T13:26:57.259Z",
     "owner": 4,
     "saved_by": [
@@ -132,6 +142,7 @@
     "title": "The Great Wave off Kanagawa",
     "description": "by Katsushika Hokusai",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367613/sei_project_3_studio_images/sR6plYFym0xcuBBkIkrq1T-BduK-z_jP69961TrRo8iYfBNje_-7cdb7FobO57-f_w454-h300-n-l64_uf5mpn.jpg",
+    "movement": "Ukiyo-e",
     "created_at": "2021-09-11T13:27:52.325Z",
     "owner": 4,
     "saved_by": []
@@ -144,6 +155,7 @@
     "title": "The Sleeping Gypsy",
     "description": "by Henri Rousseau",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367585/sei_project_3_studio_images/h0_YmUwM7uM1Er8GQX7UEwv4cevgSFhR98Ae0IftL8OkYPuSJhi1DZH1gqbU_w454-h294-n-l64_memknx.jpg",
+    "movement": "Primitivism",
     "created_at": "2021-09-11T13:28:34.691Z",
     "owner": 2,
     "saved_by": [
@@ -158,9 +170,12 @@
     "title": "Wanderer above the Sea of Fog",
     "description": "by Caspar David Friedrich",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367567/sei_project_3_studio_images/aP-WQsh26lYTb3VGLim94g_2FWanderer_thumb_800_rdgozc.jpg",
+    "movement": "Romanticism",
     "created_at": "2021-09-11T13:33:03.817Z",
     "owner": 3,
-    "saved_by": []
+    "saved_by": [
+      5
+    ]
   }
 },
 {
@@ -170,6 +185,7 @@
     "title": "Composition 8",
     "description": "by Wassily Kandinsky",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367537/sei_project_3_studio_images/50_cyyomh.jpg",
+    "movement": "Abstract",
     "created_at": "2021-09-11T13:33:50.681Z",
     "owner": 1,
     "saved_by": []
@@ -182,6 +198,7 @@
     "title": "Nude Descending a Staircase, No. 2 (Edited)",
     "description": "by Marcel Duchamp and Rrose Sélavy (Edited)",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631367508/sei_project_3_studio_images/marcel_duchamp_1_nude_descending_a_staircase_no_2_wpgvqa.jpg",
+    "movement": "Cubism",
     "created_at": "2021-09-11T13:34:54.699Z",
     "owner": 3,
     "saved_by": []
@@ -194,10 +211,12 @@
     "title": "Campbell's Soup Cans",
     "description": "by Andy Warhol",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383515/sei_project_3_studio_images/soupcan_za3sjl.jpg",
+    "movement": "Pop Art",
     "created_at": "2021-09-11T18:05:28.245Z",
     "owner": 4,
     "saved_by": [
-      2
+      2,
+      5
     ]
   }
 },
@@ -208,6 +227,7 @@
     "title": "Autumn Rhythm",
     "description": "by Jackson Pollock",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383613/sei_project_3_studio_images/pollock-644x430_t7zlou.jpg",
+    "movement": "Abstract Expressionism",
     "created_at": "2021-09-11T18:07:10.007Z",
     "owner": 2,
     "saved_by": [
@@ -222,8 +242,9 @@
     "title": "I Still Face You",
     "description": "by Njideka Akunyili Crosby",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383659/sei_project_3_studio_images/crosby-644x430_umpqa4.jpg",
+    "movement": "Postcolonial",
     "created_at": "2021-09-11T18:07:51.427Z",
-    "owner": 3,
+    "owner": 5,
     "saved_by": [
       2
     ]
@@ -236,6 +257,7 @@
     "title": "The Girl Who Had Everything",
     "description": "by Cecily Brown",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383691/sei_project_3_studio_images/brown-644x430_cz4rwm.jpg",
+    "movement": "Expressive Abstractionism",
     "created_at": "2021-09-11T18:08:26.742Z",
     "owner": 2,
     "saved_by": []
@@ -248,6 +270,7 @@
     "title": "Untitled",
     "description": "by Jean-Michel Basquiat",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383738/sei_project_3_studio_images/basquiat-644x430_eawk9e.jpg",
+    "movement": "Primitivism",
     "created_at": "2021-09-11T18:09:09.886Z",
     "owner": 3,
     "saved_by": [
@@ -262,6 +285,7 @@
     "title": "Propped",
     "description": "by Jenny Saville",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383785/sei_project_3_studio_images/saville-644x430_wnixkj.jpg",
+    "movement": "Contemporary",
     "created_at": "2021-09-11T18:09:59.939Z",
     "owner": 2,
     "saved_by": []
@@ -274,8 +298,9 @@
     "title": "My Bed",
     "description": "by Tracey Emin",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383849/sei_project_3_studio_images/emin-644x430_ob011d.jpg",
+    "movement": "Contemporary",
     "created_at": "2021-09-11T18:11:27.167Z",
-    "owner": 3,
+    "owner": 5,
     "saved_by": []
   }
 },
@@ -286,9 +311,12 @@
     "title": "Look Mickey",
     "description": "by Roy Lichtenstein",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383914/sei_project_3_studio_images/lichtenstein-644x430_pqqth8.jpg",
+    "movement": "Pop Art",
     "created_at": "2021-09-11T18:12:07.819Z",
-    "owner": 4,
-    "saved_by": []
+    "owner": 6,
+    "saved_by": [
+      5
+    ]
   }
 },
 {
@@ -298,6 +326,7 @@
     "title": "Portrait of an Artist (Pool with Two Figures)",
     "description": "by  David Hockney",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631383974/sei_project_3_studio_images/hockney-644x430_o5voy7.jpg",
+    "movement": "Pop Art",
     "created_at": "2021-09-11T18:13:40.157Z",
     "owner": 2,
     "saved_by": []
@@ -310,6 +339,7 @@
     "title": "Door 84",
     "description": "by Dorothea Tanning",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631384060/sei_project_3_studio_images/tanning-644x430_ujvy9q.jpg",
+    "movement": "Surrealism",
     "created_at": "2021-09-11T18:14:45.401Z",
     "owner": 3,
     "saved_by": []
@@ -322,9 +352,12 @@
     "title": "Self Portrait",
     "description": "by Frida Kahlo",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631384077/sei_project_3_studio_images/kahlo-644x430_parius.jpg",
+    "movement": "Surrealism",
     "created_at": "2021-09-11T18:15:21.390Z",
     "owner": 4,
-    "saved_by": []
+    "saved_by": [
+      5
+    ]
   }
 },
 {
@@ -334,6 +367,7 @@
     "title": "Reflection",
     "description": "by Lucian Freud",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631384094/sei_project_3_studio_images/freud-644x430_jic9bj.jpg",
+    "movement": "Contemporary",
     "created_at": "2021-09-11T18:15:49.065Z",
     "owner": 3,
     "saved_by": [
@@ -348,11 +382,12 @@
     "title": "Wrist Corsage",
     "description": "by Lisa Yuskavage",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631384230/sei_project_3_studio_images/image_iu6fu6.jpg",
+    "movement": "Post-Modernism",
     "created_at": "2021-09-11T18:18:17.044Z",
     "owner": 2,
     "saved_by": [
-      4,
-      3
+      3,
+      4
     ]
   }
 },
@@ -363,35 +398,12 @@
     "title": "Broadway Boogie Woogie",
     "description": "by Piet Mondrian",
     "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631384346/sei_project_3_studio_images/image_ehv7em.jpg",
+    "movement": "Modern",
     "created_at": "2021-09-11T18:20:05.274Z",
     "owner": 2,
     "saved_by": [
       3
     ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 32,
-  "fields": {
-    "title": "cool",
-    "description": "band",
-    "image": "http://res.cloudinary.com/dn11uqgux/image/upload/v1631623604/project-setup-test/pm1okybgsk7yrzgwexgh.jpg",
-    "created_at": "2021-09-14T12:46:30.509Z",
-    "owner": 3,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 33,
-  "fields": {
-    "title": "Eoin's Art edited",
-    "description": "So good",
-    "image": "http://res.cloudinary.com/dn11uqgux/image/upload/v1631634568/project-setup-test/b04ugv0tzxchvzibx2a5.jpg",
-    "created_at": "2021-09-14T15:49:31.153Z",
-    "owner": 3,
-    "saved_by": []
   }
 },
 {
@@ -722,6 +734,106 @@
     "created_at": "2021-09-13T10:54:11.508Z",
     "post": 19,
     "owner": 3
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 45,
+  "fields": {
+    "text": "Hey",
+    "created_at": "2021-09-14T16:28:35.916Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 46,
+  "fields": {
+    "text": "Wassup",
+    "created_at": "2021-09-14T16:28:38.759Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 47,
+  "fields": {
+    "text": "Great",
+    "created_at": "2021-09-14T16:28:44.844Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 48,
+  "fields": {
+    "text": "What",
+    "created_at": "2021-09-14T16:28:47.523Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 49,
+  "fields": {
+    "text": "Moianfa",
+    "created_at": "2021-09-14T16:28:48.867Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 50,
+  "fields": {
+    "text": "oaisndioun",
+    "created_at": "2021-09-14T16:28:50.037Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 51,
+  "fields": {
+    "text": "odasmodund",
+    "created_at": "2021-09-14T16:28:51.076Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 52,
+  "fields": {
+    "text": "What a great image. Where can I get one?",
+    "created_at": "2021-09-15T10:48:26.704Z",
+    "post": 18,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 53,
+  "fields": {
+    "text": "adas",
+    "created_at": "2021-09-15T11:10:35.899Z",
+    "post": 15,
+    "owner": 5
+  }
+},
+{
+  "model": "posts.comment",
+  "pk": 54,
+  "fields": {
+    "text": "hsdgf",
+    "created_at": "2021-09-15T11:17:54.686Z",
+    "post": 15,
+    "owner": 5
   }
 }
 ]
