@@ -4,6 +4,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100, unique=True)
     description = models.TextField(max_length=250)
     image = models.CharField(max_length=200)
+    movement = models.CharField(max_length=100)
     created_at = models.DateTimeField(auto_now_add=True)
     saved_by = models.ManyToManyField(
         'jwt_auth.User',
