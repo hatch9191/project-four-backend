@@ -408,6 +408,19 @@
 },
 {
   "model": "posts.post",
+  "pk": 32,
+  "fields": {
+    "title": "A piece of Art",
+    "description": "Really great",
+    "image": "http://res.cloudinary.com/dn11uqgux/image/upload/v1631734812/project-setup-test/xaczb7glaihqjqdjfnhi.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-15T19:40:15.569Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
   "pk": 33,
   "fields": {
     "title": "Sumo Wrestlers in Preparation",
@@ -515,9 +528,9 @@
     "created_at": "2021-09-16T06:39:59.342Z",
     "owner": 5,
     "saved_by": [
+      8,
       6,
-      7,
-      8
+      7
     ]
   }
 },
@@ -532,9 +545,9 @@
     "created_at": "2021-09-16T06:41:12.483Z",
     "owner": 7,
     "saved_by": [
-      7,
       9,
-      10
+      10,
+      7
     ]
   }
 },
@@ -549,9 +562,9 @@
     "created_at": "2021-09-16T06:42:11.541Z",
     "owner": 11,
     "saved_by": [
+      9,
       5,
-      7,
-      9
+      7
     ]
   }
 },
@@ -582,8 +595,8 @@
     "created_at": "2021-09-16T06:46:22.730Z",
     "owner": 8,
     "saved_by": [
-      6,
-      12
+      12,
+      6
     ]
   }
 },
@@ -945,9 +958,7 @@
     "movement": "Romanticism",
     "created_at": "2021-09-16T07:28:06.206Z",
     "owner": 6,
-    "saved_by": [
-      5
-    ]
+    "saved_by": []
   }
 },
 {
@@ -1018,9 +1029,9 @@
     "created_at": "2021-09-16T07:44:57.742Z",
     "owner": 5,
     "saved_by": [
-      6,
       8,
-      9
+      9,
+      6
     ]
   }
 },
@@ -1062,240 +1073,6 @@
     "owner": 13,
     "saved_by": [
       5
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 77,
-  "fields": {
-    "title": "Trophies of Empire",
-    "description": "by Donald Locke",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631787837/sei_project_3_studio_images/TATE_TATE_T14319-001_kokoos.jpg",
-    "movement": "Postcolonial",
-    "created_at": "2021-09-16T10:24:51.987Z",
-    "owner": 9,
-    "saved_by": [
-      8
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 78,
-  "fields": {
-    "title": "The Crowning",
-    "description": "by Yinka Shonibare",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631787942/sei_project_3_studio_images/ACC_ACC_ACC10_2016-001_kjdfds.jpg",
-    "movement": "Postcolonial",
-    "created_at": "2021-09-16T10:25:57.961Z",
-    "owner": 12,
-    "saved_by": [
-      8
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 79,
-  "fields": {
-    "title": "Beulah's Garden",
-    "description": "by Abe Odedina",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788055/sei_project_3_studio_images/ahis12490-gra-0001-m_dsvgwk.jpg",
-    "movement": "Postcolonial",
-    "created_at": "2021-09-16T10:27:51.157Z",
-    "owner": 7,
-    "saved_by": [
-      2,
-      5,
-      6
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 80,
-  "fields": {
-    "title": "Meeting the White Man",
-    "description": "by Tommy McRae",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788107/sei_project_3_studio_images/p3-13_frzccr.jpg",
-    "movement": "Postcolonial",
-    "created_at": "2021-09-16T10:28:46.082Z",
-    "owner": 8,
-    "saved_by": [
-      2,
-      5
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 81,
-  "fields": {
-    "title": "How to Slip Out of Your Body Quietly",
-    "description": "by Baez",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788185/sei_project_3_studio_images/Ba%CC%81ez_How-to-slip-out-of-your-body-quietly-copy-960x673_qv4zqw.jpg",
-    "movement": "Postcolonial",
-    "created_at": "2021-09-16T10:30:34.079Z",
-    "owner": 9,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 82,
-  "fields": {
-    "title": "Torn and Twisted Curtain",
-    "description": "by Joseph Havel",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788636/sei_project_3_studio_images/unnamed_egbwwj.jpg",
-    "movement": "Post-Modernism",
-    "created_at": "2021-09-16T10:37:45.327Z",
-    "owner": 12,
-    "saved_by": [
-      5
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 83,
-  "fields": {
-    "title": "Moon, June, Spoon",
-    "description": "by Joseph Havel",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788782/sei_project_3_studio_images/unnamed_piikk3.jpg",
-    "movement": "Post-Modernism",
-    "created_at": "2021-09-16T10:39:55.633Z",
-    "owner": 10,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 84,
-  "fields": {
-    "title": "Without title",
-    "description": "by Aldo Spoldi",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788873/sei_project_3_studio_images/unnamed_knkuxw.jpg",
-    "movement": "Post-Modernism",
-    "created_at": "2021-09-16T10:41:28.294Z",
-    "owner": 6,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 85,
-  "fields": {
-    "title": "Booster",
-    "description": "by Robert Rauschenberg",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631788984/sei_project_3_studio_images/cri_000000360357_zlmjpw.jpg",
-    "movement": "Post-Modernism",
-    "created_at": "2021-09-16T10:44:20.617Z",
-    "owner": 6,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 86,
-  "fields": {
-    "title": "Boy in a Red Vest",
-    "description": "by Paul Cézanne, painted in 1889 or 1890. It is a fine example of Cézanne's skilled, nuanced, and innovative mature work after 1880",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789208/sei_project_3_studio_images/index_vwtyze.jpg",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T10:47:16.802Z",
-    "owner": 6,
-    "saved_by": [
-      8,
-      7
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 87,
-  "fields": {
-    "title": "Where Do We Come From? What Are We? Where Are We Going?",
-    "description": "by French artist Paul Gauguin.",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789407/sei_project_3_studio_images/450px-Paul_Gauguin_-_D_ou_venons-nous_qxy07k.jpg",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T10:50:24.812Z",
-    "owner": 2,
-    "saved_by": [
-      4
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 88,
-  "fields": {
-    "title": "Starry Night Over the Rhône",
-    "description": "Starry Night, commonly known as Starry Night Over the Rhône, is one of Vincent van Gogh's paintings of Arles at night.",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789618/sei_project_3_studio_images/391142_tbjvjy.jpg",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T10:54:05.259Z",
-    "owner": 2,
-    "saved_by": [
-      5
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 89,
-  "fields": {
-    "title": "The Card Players",
-    "description": "by Paul Cézanne",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789734/sei_project_3_studio_images/image_ow0etj.webp",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T10:55:50.481Z",
-    "owner": 2,
-    "saved_by": [
-      11,
-      12,
-      13
-    ]
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 90,
-  "fields": {
-    "title": "Wheat Field with Cypresses",
-    "description": "by Vincent van Gogh",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789803/sei_project_3_studio_images/n-3861-00-000045-hd_s639uq.jpg",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T10:56:58.790Z",
-    "owner": 12,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 91,
-  "fields": {
-    "title": "Bathers at Asnières",
-    "description": "by Georges Seurat",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789890/sei_project_3_studio_images/n-3908-00-000103-hd_qc0ugk.jpg",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T10:58:42.932Z",
-    "owner": 11,
-    "saved_by": []
-  }
-},
-{
-  "model": "posts.post",
-  "pk": 92,
-  "fields": {
-    "title": "At the Moulin Rouge, The Dance",
-    "description": "by Henri de Toulouse-Lautrec",
-    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631789992/sei_project_3_studio_images/HenriDeToulouse-Lautrec-AtTheMoulinRouge-TheDance-1889-90-VR_wror5j.jpg",
-    "movement": "Post-Impressionism",
-    "created_at": "2021-09-16T11:00:10.723Z",
-    "owner": 11,
-    "saved_by": [
-      6
     ]
   }
 },
@@ -1637,7 +1414,7 @@
     "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631787486/project-4/I-and-the-Village-by-Marc-Chagall-239x300_x0k9z0.webp",
     "movement": "Cubism",
     "created_at": "2021-09-16T10:18:16.789Z",
-    "owner": 13,
+    "owner": 14,
     "saved_by": []
   }
 },
@@ -1650,7 +1427,7 @@
     "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631787584/project-4/Maya-with-Doll-by-Pablo-Picasso-244x300_1_i0c4jq.webp",
     "movement": "Cubism",
     "created_at": "2021-09-16T10:19:51.864Z",
-    "owner": 13,
+    "owner": 14,
     "saved_by": []
   }
 },
@@ -1663,7 +1440,7 @@
     "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631787641/project-4/The-City-by-Fernand-Le%CC%81ger-300x231_kdgqow.jpg",
     "movement": "Cubism",
     "created_at": "2021-09-16T10:20:56.535Z",
-    "owner": 3,
+    "owner": 14,
     "saved_by": []
   }
 },
@@ -2224,16 +2001,6 @@
     "text": "hsdgf",
     "created_at": "2021-09-15T11:17:54.686Z",
     "post": 15,
-    "owner": 5
-  }
-},
-{
-  "model": "posts.comment",
-  "pk": 55,
-  "fields": {
-    "text": "Siiiick",
-    "created_at": "2021-09-16T10:14:55.393Z",
-    "post": 51,
     "owner": 5
   }
 }
