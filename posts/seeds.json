@@ -407,6 +407,914 @@
   }
 },
 {
+  "model": "posts.post",
+  "pk": 32,
+  "fields": {
+    "title": "A piece of Art",
+    "description": "Really great",
+    "image": "http://res.cloudinary.com/dn11uqgux/image/upload/v1631734812/project-setup-test/xaczb7glaihqjqdjfnhi.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-15T19:40:15.569Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 33,
+  "fields": {
+    "title": "Sumo Wrestlers in Preparation",
+    "description": "from Hokusai Manga by Katsushika Hokusai",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773496/sei_project_3_studio_images/238px-Hokusai_Manga_02_ayzvds.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:26:44.448Z",
+    "owner": 11,
+    "saved_by": [
+      12
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 34,
+  "fields": {
+    "title": "Treasures Hidden in our Pockets",
+    "description": "From erotic shunga sex manual by Keisai Eisen",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773496/sei_project_3_studio_images/238px-Kaichu_hiho__jiiro_haya_shinan__mid_1830s-early_1840s_zabwcv.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:29:21.112Z",
+    "owner": 11,
+    "saved_by": [
+      5
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 35,
+  "fields": {
+    "title": "Utagawa Yoshitaki",
+    "description": "ukiyo-e prints are sensitive to light. The left half shows this print in 1989, the right shows the same print after being on display until 2001.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773496/sei_project_3_studio_images/220px-Ichiyo%CC%84sai_Yoshitaki_pre-fade_post-fade_vryfrg.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:31:25.107Z",
+    "owner": 11,
+    "saved_by": [
+      5,
+      6,
+      8
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 36,
+  "fields": {
+    "title": "Yakusha-e",
+    "description": "Print of two kabuki actors by Tōshūsai Sharaku",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773496/sei_project_3_studio_images/215px-SharakuTwoActors_e2qndy.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:32:45.952Z",
+    "owner": 11,
+    "saved_by": [
+      5,
+      8,
+      10
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 37,
+  "fields": {
+    "title": "Making Prints",
+    "description": "by Hosoki Toshikazu",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773496/sei_project_3_studio_images/214px-Kiso_Naojiro%CC%84__1879__Making_Prints_y9z3gu.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:33:58.927Z",
+    "owner": 11,
+    "saved_by": [
+      5,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 38,
+  "fields": {
+    "title": "The woodblock printing process",
+    "description": "by Utagawa Kunisada. A fantasy version, wholly staffed by well-dressed \"beauties\". In fact, few women worked in printmaking.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773496/sei_project_3_studio_images/Utagawa_Kunisada__1857__Imayo%CC%84_mitate_shino%CC%84_ko%CC%84sho%CC%84_yori_shokunin_fb4skt.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:35:24.012Z",
+    "owner": 11,
+    "saved_by": [
+      2,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 39,
+  "fields": {
+    "title": "Feminine Wave",
+    "description": "by Katsushika Hokusai",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773497/sei_project_3_studio_images/317px-Femenine_wave_ahmi0k.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:39:59.342Z",
+    "owner": 5,
+    "saved_by": [
+      8,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 40,
+  "fields": {
+    "title": "Yoshiwara no Hana",
+    "description": "by Kitagawa Utamaro",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773497/sei_project_3_studio_images/435px-Utamaro__c._1788_91__Yoshiwara_no_Hana_f1ijxd.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:41:12.483Z",
+    "owner": 7,
+    "saved_by": [
+      9,
+      10,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 41,
+  "fields": {
+    "title": "A Winter Party",
+    "description": "by Utagawa Toyoharu",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631773497/sei_project_3_studio_images/558px-Utagawa_Toyoharu_-_A_Winter_Party_-_Google_Art_Project_bkpqog.jpg",
+    "movement": "Ukiyo-e",
+    "created_at": "2021-09-16T06:42:11.541Z",
+    "owner": 11,
+    "saved_by": [
+      9,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 42,
+  "fields": {
+    "title": "The Persistence of Memory",
+    "description": "by Salvador Dalí",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631774612/sei_project_3_studio_images/the-persistence-of-memory-1931_irzdbf.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:43:57.257Z",
+    "owner": 5,
+    "saved_by": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 43,
+  "fields": {
+    "title": "The Broken Column",
+    "description": "by Frida Kahlo, painted in 1944 shortly after she had spinal surgery to correct on-going problems which had resulted from a serious traffic accident when she was 18 years old.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631774755/sei_project_3_studio_images/the-broken-column_rjmaa3.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:46:22.730Z",
+    "owner": 8,
+    "saved_by": [
+      12,
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 44,
+  "fields": {
+    "title": "The Great Masturbator",
+    "description": "by Salvador Dalí",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631774869/sei_project_3_studio_images/the-great-masturbator-1929_n4r4p0.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:48:37.402Z",
+    "owner": 12,
+    "saved_by": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 45,
+  "fields": {
+    "title": "Guernica",
+    "description": "by Pablo Picasso, regarded by many art critics as the most moving and powerful anti-war painting in history.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631774984/sei_project_3_studio_images/7bdbc75725194a9a44d66846fc37962e_k6nwkk.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:50:09.033Z",
+    "owner": 12,
+    "saved_by": [
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 46,
+  "fields": {
+    "title": "Philosopher's Lamp",
+    "description": "one of the popular paintings by the surrealist Rene Magritte",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775068/sei_project_3_studio_images/Philosopher_s_Lamp_Rene_Magritte_wr20gm.webp",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:51:30.353Z",
+    "owner": 8,
+    "saved_by": [
+      11,
+      12
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 47,
+  "fields": {
+    "title": "The Lovers",
+    "description": "by René Magritte, the artist invokes the cinematic cliché of a close–up kiss but subverts our voyeuristic pleasure by shrouding the faces in cloth.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775185/sei_project_3_studio_images/7493053_lesamantsfull_frmynf.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:53:22.378Z",
+    "owner": 9,
+    "saved_by": [
+      5
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 48,
+  "fields": {
+    "title": "Golconda",
+    "description": "by René Magritte",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775281/sei_project_3_studio_images/d7hftxdivxxvm.cloudfront.net_t6tnu4.webp",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:54:57.173Z",
+    "owner": 7,
+    "saved_by": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 49,
+  "fields": {
+    "title": "Girl with Death Mask (She Plays Alone)",
+    "description": "by Frida Kahlo",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775414/sei_project_3_studio_images/unnamed_nkn3fs.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:57:10.063Z",
+    "owner": 12,
+    "saved_by": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 50,
+  "fields": {
+    "title": "The Son of Man",
+    "description": "by René Magritte, painted as a self-portrait.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775454/sei_project_3_studio_images/son-of-man-1964_1_l2el1s.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:58:22.700Z",
+    "owner": 7,
+    "saved_by": [
+      9,
+      11
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 51,
+  "fields": {
+    "title": "The Castle of the Pyrenees",
+    "description": "by René Magritte",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775542/sei_project_3_studio_images/the-castle-of-the-pyrenees-1959_1_kykuud.jpg",
+    "movement": "Surrealism",
+    "created_at": "2021-09-16T06:59:29.549Z",
+    "owner": 5,
+    "saved_by": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 52,
+  "fields": {
+    "title": "Well Hung Lover",
+    "description": "by Banksy",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775669/sei_project_3_studio_images/Well_Hung_Lover_bg4rex.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:01:45.382Z",
+    "owner": 5,
+    "saved_by": [
+      9
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 53,
+  "fields": {
+    "title": "El Nestornauta",
+    "description": "The cartoon “El Eternauta” depicted an apocalyptic vision of Buenos Aires, where survivors of a lethally toxic snowfall had to resist an alien invasion.",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775803/sei_project_3_studio_images/unnamed_rw96dl.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:03:42.334Z",
+    "owner": 9,
+    "saved_by": [
+      12
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 54,
+  "fields": {
+    "title": "Chuuuttt!!!",
+    "description": "by the Swiss artist Jean Tinguely and his wife Niki de Saint Phalle",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775882/sei_project_3_studio_images/4ea1f4dd5fe350fddebaee6579deea90_t5dfws.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:04:58.818Z",
+    "owner": 7,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 55,
+  "fields": {
+    "title": "Kissing Coppers",
+    "description": "Banksy",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631775967/sei_project_3_studio_images/s-l300_lbqmkw.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:06:19.480Z",
+    "owner": 8,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 56,
+  "fields": {
+    "title": "The Wall - Banksy Balloons",
+    "description": "in a settlement in Palestine",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776057/sei_project_3_studio_images/Banksy-ii_rlgdpn.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:07:49.555Z",
+    "owner": 8,
+    "saved_by": [
+      5
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 57,
+  "fields": {
+    "title": "The Death of Graffiti",
+    "description": "by Lady Pink",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776140/sei_project_3_studio_images/d7hftxdivxxvm.cloudfront.net_xun0ij.webp",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:09:17.855Z",
+    "owner": 9,
+    "saved_by": [
+      11
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 58,
+  "fields": {
+    "title": "Santiago Idáñez",
+    "description": "self titled",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776227/sei_project_3_studio_images/unnamed_hnfmde.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:10:39.006Z",
+    "owner": 7,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 59,
+  "fields": {
+    "title": "I`m proud to be american",
+    "description": "by Carrie Reichardt",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776273/sei_project_3_studio_images/unnamed_qim6to.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:11:27.917Z",
+    "owner": 8,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 60,
+  "fields": {
+    "title": "Caseros",
+    "description": "by Martín Ron",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776350/sei_project_3_studio_images/unnamed_q1g5bl.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:12:45.654Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 61,
+  "fields": {
+    "title": "Tour Paris 13, Extérieur",
+    "description": "by Keith Haring",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776402/sei_project_3_studio_images/unnamed_ts1uza.jpg",
+    "movement": "Street",
+    "created_at": "2021-09-16T07:13:49.496Z",
+    "owner": 8,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 62,
+  "fields": {
+    "title": "Liberty Leading the People",
+    "description": "by Eugène Delacroix commemorating the July Revolution of 1830, which toppled King Charles X of France",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776548/sei_project_3_studio_images/Euge%CC%80ne_Delacroix_-_Le_28_Juillet._La_Liberte%CC%81_guidant_le_peuple_aeywvr.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:16:13.970Z",
+    "owner": 10,
+    "saved_by": [
+      9
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 63,
+  "fields": {
+    "title": "Saturn Devouring His Son",
+    "description": "by Spanish artist Francisco Goya",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776632/sei_project_3_studio_images/1200px-Francisco_de_Goya__Saturno_devorando_a_su_hijo__1819-1823_d9yxsx.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:17:22.440Z",
+    "owner": 9,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 64,
+  "fields": {
+    "title": "The Raft of the Medusa",
+    "description": "originally titled Scène de Naufrage (Shipwreck Scene) - by Théodore Géricault",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776912/sei_project_3_studio_images/index_jq1lgh.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:21:59.954Z",
+    "owner": 8,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 65,
+  "fields": {
+    "title": "Le Désespéré",
+    "description": "by Gustave Courbet",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631776968/sei_project_3_studio_images/300px-Gustave_Courbet_-_Le_De%CC%81sespe%CC%81re%CC%81__1843_enhum6.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:22:58.601Z",
+    "owner": 7,
+    "saved_by": [
+      5
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 66,
+  "fields": {
+    "title": "The Soul of the Rose",
+    "description": "also known as 'My Sweet Rose', was painted by Waterhouse in 1908",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631777122/sei_project_3_studio_images/index_zvebh4.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:25:32.724Z",
+    "owner": 7,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 67,
+  "fields": {
+    "title": "La Maja desnuda",
+    "description": "Francisco Goya",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631777173/sei_project_3_studio_images/index_aq7esr.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:26:29.321Z",
+    "owner": 9,
+    "saved_by": [
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 68,
+  "fields": {
+    "title": "The Spoliarium",
+    "description": "The Spoliarium is a painting by Filipino painter Juan Luna which depicts dying gladiators",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631777269/sei_project_3_studio_images/7y8sety80jd41_lyycm4.png",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:28:06.206Z",
+    "owner": 6,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 69,
+  "fields": {
+    "title": "Bridal Procession on the Hardangerfjord",
+    "description": "by Hans Gude and Adolph Tidemand",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631777586/sei_project_3_studio_images/1200px-Adolph_Tidemand___Hans_Gude_-_Bridal_Procession_on_the_Hardangerfjord_-_Google_Art_Project_lubu4o.jpg",
+    "movement": "Romanticism",
+    "created_at": "2021-09-16T07:33:20.102Z",
+    "owner": 5,
+    "saved_by": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 70,
+  "fields": {
+    "title": "Self-Portrait from L'ile Saint Louis",
+    "description": "'Self Portrait from L'ile Saint Louis' was created in 1890 by Henri Rousseau in Naïve Art (Primitivism) style",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631777695/sei_project_3_studio_images/71kbmEUYtOL_t02d7q.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:35:32.594Z",
+    "owner": 8,
+    "saved_by": [
+      5
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 71,
+  "fields": {
+    "title": "Arearea",
+    "description": "by French painter Paul Gauguin",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631778152/sei_project_3_studio_images/index_qzrzbd.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:42:43.440Z",
+    "owner": 8,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 72,
+  "fields": {
+    "title": "The Snake Charmer",
+    "description": "by French Naïve artist Henri Rousseau",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631778217/sei_project_3_studio_images/Henri_Rousseau_011_dvoltb.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:43:45.414Z",
+    "owner": 11,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 73,
+  "fields": {
+    "title": "Tiger in a Tropical Storm",
+    "description": "1891 oil-on-canvas painting by Henri Rousseau",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631778275/sei_project_3_studio_images/tiger-in-a-tropical-storm-surprised-1891.jpg_Large_ddxyzf.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:44:57.742Z",
+    "owner": 5,
+    "saved_by": [
+      8,
+      9,
+      6
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 74,
+  "fields": {
+    "title": "A Centennial of Independence",
+    "description": "Among Rousseau's patriotic scenes",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631778336/sei_project_3_studio_images/a-centennial-of-independence-henri-rousseau_m1a7b1.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:46:07.153Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 75,
+  "fields": {
+    "title": "Fatata te Miti",
+    "description": "by Paul Gauguin",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631779007/sei_project_3_studio_images/index_rwnvac.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:57:03.639Z",
+    "owner": 8,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 76,
+  "fields": {
+    "title": "Atiti",
+    "description": "Paul Gauguin",
+    "image": "https://res.cloudinary.com/dn11uqgux/image/upload/v1631779127/sei_project_3_studio_images/atiti-paul-gauguin-44115-copyright-kroller-muller-museum_zgi7t9.jpg",
+    "movement": "Primitivism",
+    "created_at": "2021-09-16T07:59:00.070Z",
+    "owner": 13,
+    "saved_by": [
+      5
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 132,
+  "fields": {
+    "title": "Evening Honfleur",
+    "description": "by Georges-Pierre Seurat",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631748386/project-4/cri_000000456386_zdy3aw.jpg",
+    "movement": "Neo-Impressionism",
+    "created_at": "2021-09-15T23:26:41.504Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 133,
+  "fields": {
+    "title": "At the Concert Européen",
+    "description": "by Georges-Pierre Seurat",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631748427/project-4/cri_000000075627_vvluid.jpg",
+    "movement": "Neo-Impressionism",
+    "created_at": "2021-09-15T23:27:58.280Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 134,
+  "fields": {
+    "title": "Opus 217",
+    "description": "by Paul Signac",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631748534/project-4/cri_000000468402_kherzk.jpg",
+    "movement": "Neo-Impressionism",
+    "created_at": "2021-09-15T23:29:18.514Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 135,
+  "fields": {
+    "title": "La Récolte des Foins",
+    "description": "by Camille Pissarro",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631748640/project-4/neo_impressionism_3_xmdovc.jpg",
+    "movement": "Neo-Impressionism",
+    "created_at": "2021-09-15T23:30:55.234Z",
+    "owner": 2,
+    "saved_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 136,
+  "fields": {
+    "title": "The Evening Air",
+    "description": "by Henri-Edmond Cross",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631748963/project-4/neo_impressionism_6_rqlofk.jpg",
+    "movement": "Neo-Impressionism",
+    "created_at": "2021-09-15T23:36:18.608Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 137,
+  "fields": {
+    "title": "Luxe, Calme et Volupté",
+    "description": "by Henri Matisse",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749018/project-4/neo_impressionism_7_zoakvl.jpg",
+    "movement": "Neo-Impressionism",
+    "created_at": "2021-09-15T23:37:14.283Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 138,
+  "fields": {
+    "title": "Time",
+    "description": "by Liu Xiaodong",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749098/project-4/MTgyNzMzMzU1MTEwOTAxMDg4_uocjpk.webp",
+    "movement": "Modernism",
+    "created_at": "2021-09-15T23:38:36.699Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 139,
+  "fields": {
+    "title": "Girl with a Kitten",
+    "description": "by Lucian Freud",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749157/project-4/MTgyNzMzNDA2MzgyMDczMjUx_ioaumd.webp",
+    "movement": "Modernism",
+    "created_at": "2021-09-15T23:39:30.550Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 140,
+  "fields": {
+    "title": "Prometheus",
+    "description": "by José Clemente Orozco",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749205/project-4/MTgyNzMzOTQ1NjY4OTA0MzU1_mqp6wn.webp",
+    "movement": "Modernism",
+    "created_at": "2021-09-15T23:40:15.541Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 141,
+  "fields": {
+    "title": "Gimn of Poseidon",
+    "description": "by Arsen Savadov",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749244/project-4/MTgxOTg2Njg2NTg5MjE2MDcy_tych9c.webp",
+    "movement": "Modernism",
+    "created_at": "2021-09-15T23:40:59.363Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 142,
+  "fields": {
+    "title": "Custer's Last Stand",
+    "description": "by Edgar Samuel Paxson",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749416/project-4/MTgxNTQ1MzQzNTM0NTA3OTU4_fhjt1f.webp",
+    "movement": "Contemporary",
+    "created_at": "2021-09-15T23:43:42.744Z",
+    "owner": 2,
+    "saved_by": [
+      2
+    ]
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 143,
+  "fields": {
+    "title": "Hay Harvest at Éragny",
+    "description": "by Camille Pissarro",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749452/project-4/MTc0NjQ3MzI1OTQ4NDU0MjY2_azkzje.webp",
+    "movement": "Contemporary",
+    "created_at": "2021-09-15T23:44:24.097Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 144,
+  "fields": {
+    "title": "Poker Game",
+    "description": "by Cassius Marcellus Coolidge",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749506/project-4/MTc0NjQ3MzI1Njc3OTg3MTk0_mmvz1r.webp",
+    "movement": "Contemporary",
+    "created_at": "2021-09-15T23:45:15.108Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 145,
+  "fields": {
+    "title": "Ciphers and Constellations, in Love with a Woman",
+    "description": "by Joan Miró",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749596/project-4/MTc0NjQ3MzI1OTQ3ODY0NDQy_omvqv6.webp",
+    "movement": "Contemporary",
+    "created_at": "2021-09-15T23:46:44.763Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 146,
+  "fields": {
+    "title": "Sleeping Venus",
+    "description": "by Paul Delvaux",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749647/project-4/MTc0NjQ3MzI1OTQ4NTE5ODAy_znbiog.webp",
+    "movement": "Contemporary",
+    "created_at": "2021-09-15T23:47:37.193Z",
+    "owner": 2,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 147,
+  "fields": {
+    "title": "Composition X",
+    "description": "by Wassily Kandinsky",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749715/project-4/62_bnm19q.jpg",
+    "movement": "Abstract Expressionism",
+    "created_at": "2021-09-15T23:48:47.694Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 48,
+  "fields": {
+    "title": "Convergence",
+    "description": "by Jackson Pollock",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749772/project-4/convergence_xexk2y.jpg",
+    "movement": "Abstract Expressionism",
+    "created_at": "2021-09-15T23:49:35.605Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
+  "model": "posts.post",
+  "pk": 149,
+  "fields": {
+    "title": "Scorn",
+    "description": "by Tomoo Gokita",
+    "image": "https://res.cloudinary.com/dk0r9bcxy/image/upload/v1631749815/project-4/z4-nettleton-gokita-a-20140912_n78uq9.jpg",
+    "movement": "Abstract Expressionism",
+    "created_at": "2021-09-15T23:50:19.127Z",
+    "owner": 5,
+    "saved_by": []
+  }
+},
+{
   "model": "posts.comment",
   "pk": 3,
   "fields": {
