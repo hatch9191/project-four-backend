@@ -1,3 +1,5 @@
+import re
+from django.http import response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
@@ -106,13 +108,6 @@ class MessageDetailVeiw(APIView):
             raise NotFound(detail='Message not found')
 
 
-# class MessageEditView(UpdateAPIView):
-#     # edit a message
-
-#     queryset = Message.objects.all()
-#     serializer_class = MessageEditSerializer
-#     permission_classes = (IsAuthenticated, )
-
 class MessageEditView(APIView):
     # edit a message
     permission_classes = (IsAuthenticated, )
@@ -126,3 +121,25 @@ class MessageEditView(APIView):
             edited_message.save()
             return Response(edited_message.data, status=status.HTTP_202_ACCEPTED)
         return Response(edited_message.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+
+# class MessageEditView(APIView):
+#     # edit all messages that a user has not read
+#     permission_classes = (IsAuthenticated, )
+
+#     def put(self, request, **kwargs):
+#         current_user = request.user.id
+#         # other_user = kwargs['profile_pk']
+#         chat_with_messages = Chat.objects.get(kwargs['chat_pk'])
+
+#         serialized_chat = Message(chat=chat_with_messages)
+
+#         print(serialized_chat)
+#         messages = serialized_chat.filter(
+#             (Q(recipient=current_user) & Q(is_read=False)))
+
+#         edited_messages = MessageEditSerializer(
+#             messages, data=request.data, many=True)
+
+#         edited_messages.save()
+#         return Response(edited_messages.data, status=status.HTTP_202_ACCEPTED)
