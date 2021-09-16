@@ -1,7 +1,10 @@
+import re
+from django.http import response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework.generics import UpdateAPIView
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Q
 
@@ -9,7 +12,8 @@ from .models import Chat, Message
 from .serializers import (
     BasicChatSerializer,
     MessageSerializer,
-    CreateChatSerializer
+    CreateChatSerializer,
+    MessageEditSerializer
 )
 
 
@@ -102,3 +106,40 @@ class MessageDetailVeiw(APIView):
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Message.DoesNotExist:
             raise NotFound(detail='Message not found')
+
+
+class MessageEditView(APIView):
+    # edit a message
+    permission_classes = (IsAuthenticated, )
+
+    def put(self, request, **kwargs):
+        current_message = Message.objects.get(pk=kwargs['message_pk'])
+        edited_message = MessageEditSerializer(
+            current_message, data=request.data)
+        print(edited_message)
+        if edited_message.is_valid():
+            edited_message.save()
+            return Response(edited_message.data, status=status.HTTP_202_ACCEPTED)
+        return Response(edited_message.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+
+# class MessageEditView(APIView):
+#     # edit all messages that a user has not read
+#     permission_classes = (IsAuthenticated, )
+
+#     def put(self, request, **kwargs):
+#         current_user = request.user.id
+#         # other_user = kwargs['profile_pk']
+#         chat_with_messages = Chat.objects.get(kwargs['chat_pk'])
+
+#         serialized_chat = Message(chat=chat_with_messages)
+
+#         print(serialized_chat)
+#         messages = serialized_chat.filter(
+#             (Q(recipient=current_user) & Q(is_read=False)))
+
+#         edited_messages = MessageEditSerializer(
+#             messages, data=request.data, many=True)
+
+#         edited_messages.save()
+#         return Response(edited_messages.data, status=status.HTTP_202_ACCEPTED)

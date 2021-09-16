@@ -20,6 +20,7 @@ class Chat(models.Model):
 
 
 class Message(models.Model):
+    is_read = models.BooleanField(default=False)
     content = models.TextField(max_length=350)
     created_at = models.DateTimeField(auto_now_add=True)
     chat = models.ForeignKey(

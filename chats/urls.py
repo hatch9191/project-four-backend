@@ -5,20 +5,23 @@ from .views import (
     ChatCreateView,
     SingleChatView,
     MessageListView,
-    MessageDetailVeiw
+    MessageDetailVeiw,
+    MessageEditView
 )
 
 urlpatterns = [
     path('profile/<int:profile_pk>/chats/<int:chat_pk>/',
-        SingleChatView.as_view()),
+         SingleChatView.as_view()),
     path('profile/<int:profile_pk>/loadchats/',
-        ChatListView.as_view()),
+         ChatListView.as_view()),
     path('profile/<int:profile_pk>/loaduserchats/',
-        ChatListAllUserView.as_view()),
+         ChatListAllUserView.as_view()),
     path('profile/<int:pk>/chats/',
-        ChatCreateView.as_view()),
+         ChatCreateView.as_view()),
     path('profile/<int:profile_pk>/chats/<int:chat_pk>/messages/',
-        MessageListView.as_view()),
+         MessageListView.as_view()),
     path('profile/<int:profile_pk>/chats/<int:chat_pk>/messages/<int:message_pk>/',
-        MessageDetailVeiw.as_view())
+         MessageDetailVeiw.as_view()),
+    path('profile/<int:profile_pk>/chats/<int:chat_pk>/messages/<int:message_pk>/edit/',
+         MessageEditView.as_view())
 ]
